@@ -13,9 +13,7 @@ def titleToNumber(s):
     length=len(s)
     base=ord('A')
     result=0
-    print (length)
     for i in range(length):
-        print (i)
         result+=(ord(s[i])-base+1)*(26**(length-i-1))
         
     return result
